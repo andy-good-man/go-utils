@@ -5,10 +5,13 @@ import (
 	"testing"
 )
 
-func TestArrayInExist(t *testing.T) {
+func TestArrayIn(t *testing.T) {
 	array := []string{"1", "2", "33", "44"}
+	// array := []string{}
+	// var array []string
 
-	ishere := ArrayInExist(array, "33")
+	fmt.Println("len(array)  :", len(array), array)
+	ishere := ArrayIn(array, "33")
 	fmt.Println("ishere  :", ishere)
 }
 
