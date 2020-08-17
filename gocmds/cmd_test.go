@@ -44,7 +44,8 @@ func TestRun(t *testing.T) {
 	// ret := cmder.Run("pwd && ls -rtl", 4)
 	// ret := cmder.Run("ls -rtl", 4)
 	cmdline := "ffprobe -v quiet -print_format json -show_format -show_streams ./test/debug-1.mp4"
-	ret := cmder.Run(cmdline)
+	// ret := cmder.Run(cmdline)
+	ret := cmder.Run(cmdline, 10)
 
 	fmt.Println("ret  :", ret)
 	fmt.Println("ret err  :", ret.Err())
