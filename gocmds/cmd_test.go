@@ -47,8 +47,8 @@ func TestRun(t *testing.T) {
 	// ret := cmder.Run(cmdline)
 	ret := cmder.Run(cmdline, 10)
 
-	fmt.Println("ret  :", ret)
-	fmt.Println("ret err  :", ret.Err())
+	// fmt.Println("ret  :", ret)
+	fmt.Println("ret err  :", ret.Err()) // nil ==> if ret.Err() == nil {}
 	fmt.Println("ret  :", ret)
 
 	ffprobe := new(TestFFprobe)
@@ -64,6 +64,7 @@ func TestRun(t *testing.T) {
 
 	fmt.Println("ffprobe.Streams[0].Index  :", ffprobe.Streams[0].Index)
 	fmt.Println("ffprobe.Streams[0].CodecType  :", ffprobe.Streams[0].CodecType)
+	fmt.Println("ffprobe.Streams[0].RealFrameRate  :", ffprobe.Streams[0].RealFrameRate)
 	fmt.Println("ffprobe.Format.FileName  :", ffprobe.Format.FileName)
 	fmt.Println("ffprobe.Format.Size  :", ffprobe.Format.Size)
 	fmt.Println("ffprobe.Format.Duration  :", ffprobe.Format.Duration)
