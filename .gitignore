@@ -18,4 +18,5 @@
 
 # file
 .idea/
-
+.vscode/
+test/
