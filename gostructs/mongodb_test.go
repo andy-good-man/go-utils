@@ -49,4 +49,9 @@ func TestToMgoBsonSweet(t *testing.T) {
 	// data := ToMgoBsonSweet(user, checks, dels)
 
 	fmt.Println("data  :", data)
+
+	// tt := map[string]interface{}{"123": 123, "aa": "aa"}
+	tt := map[string]interface{}{}
+	delete(tt, "123")
+	fmt.Println("tt  :", tt)
 }
