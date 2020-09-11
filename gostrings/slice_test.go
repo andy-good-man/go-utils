@@ -74,3 +74,32 @@ func TestClone(t *testing.T) {
 	fmt.Println(r2)
 
 }
+
+/*
+func xxx() {
+	if !found {
+		err = fmt.Errorf("reverse field `%s` not found in model `%s`", fi.fullName, fi.relModelInfo.fullName)
+		goto end
+	}
+
+	mForA:
+		for _, ffi := range fi.relModelInfo.fields.fieldsByType[RelOneToOne] {
+			if ffi.relModelInfo == mi {
+				found = true
+				fi.reverseField = ffi.name
+				fi.reverseFieldInfo = ffi
+
+				ffi.reverseField = fi.name
+				ffi.reverseFieldInfo = fi
+				break mForA
+			}
+		}
+}
+
+end:
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(2)
+	}
+}
+*/
